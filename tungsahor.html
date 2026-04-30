@@ -4,67 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tung Sahur Clicker</title>
+
 <style>
-  body {
+  html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     background: #0b0b14;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    overflow: hidden;
   }
 
-  .card {
-    text-align: center;
-    padding: 30px;
-    border: 1px solid #333;
-    border-radius: 12px;
-    background: #16162a;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-  }
-
-  h1 {
-    margin: 0 0 10px;
-  }
-
-  button {
-    margin-top: 15px;
-    padding: 12px 18px;
-    font-size: 16px;
+  iframe {
+    width: 100%;
+    height: 100%;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background: #f0c040;
-    color: #000;
-    font-weight: bold;
-  }
-
-  .count {
-    font-size: 28px;
-    margin-top: 10px;
+    display: block;
+    background: black;
   }
 </style>
 </head>
+
 <body>
 
-<div class="card">
-  <h1>🧠 Tung Sahur Clicker</h1>
-  <p>Click the button</p>
-  <div class="count" id="count">0</div>
-  <button onclick="clicker()">CLICK</button>
-</div>
-
-<script>
-let count = 0;
-
-function clicker() {
-  count++;
-  document.getElementById("count").textContent = count;
-}
-</script>
+<iframe 
+  src="https://tungsahur-clicker.com/embed/tung-sahur-clicker"
+  allowfullscreen
+  scrolling="no">
+</iframe>
 
 </body>
 </html>
